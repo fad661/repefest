@@ -1,0 +1,3 @@
+section.first-view {
+    background
+}
