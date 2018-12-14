@@ -10,7 +10,7 @@ h1 {
     position: absolute;
     left: 15px;
     top: 50vh;
-    font-size: 36px;
+    font-size: 48px;
     color: #ffa3a3;
     letter-spacing: 3px;
     font-weight: 700;
@@ -30,7 +30,7 @@ section.first-view {
 section.first-view .message {
     position: absolute;
     left: 15px;
-    top: 20vh;
+    top: 30vh;
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 1;
@@ -75,9 +75,8 @@ section.first-view .details {
 .open-start-list p {
     width: 50%;
     display:inline-block;
-    vertical-align: middle;
     text-align: center;
-    color: black;
+    color: #3a3a3a;
 }
 
 .open-start-list .open-time {
@@ -105,18 +104,177 @@ section.first-view .details {
     display:inline-block;
     vertical-align: middle;
     text-align: center;
-    color: black;
+    color: #3a3a3a;
+}
+
+.band-detail {
+    display: none;
+    color: #3a3a3a;
+    padding: 40px 15px 0;
+    border-bottom: 1px solid #3a3a3a;
+}
+@keyframes open{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.band-detail.open {
+    display: block;
+    animation: show 1s linear 0s;
+}
+
+.band-detail h3 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.band-detail .member,
+.band-detail .message,
+.band-detail .bio {
+    margin-bottom: 40px;
+}
+
+.band-detail .member p {
+    margin: 3px 0;
+}
+
+.band-detail .message p,
+.band-detail .bio p {
+    margin: 10px 0;
+    line-height: 1.4;
 }
 
 /* band images start */
 
 #rotten {
     background: linear-gradient( 135deg, rgba(99, 0, 0, 0.6), rgba(99, 0, 0, 0.3)),
-  url('../images/first_view.jpg');
+  url('../images/rot.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 #rotten.open {
-    background: url('../images/first_view.jpg'); 
+    background: url('../images/rot.jpg');
+    background-position: center;
+    background-size: cover;
+    height: calc(100vw * 665 / 375);
+}
+
+#kikawa {
+    background: linear-gradient( 135deg, rgba(0, 127, 83, 0.6), rgba(99, 0, 0, 0.3)),
+  url('../images/kikawa.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#kikawa.open {
+    background: url('../images/kikawa.jpg');
+    background-position: center;
+    background-size: cover;
+    height: calc(100vw * 281 / 375);
+}
+
+#cr {
+    background: linear-gradient( 135deg, rgba(99, 0, 0, 0.6), rgba(99, 0, 0, 0.3)),
+  url('../images/cry.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#cr.open {
+    background: url('../images/cry.jpg');
+    background-position: center;
+    background-size: cover;
+    height: calc(100vw * 310 / 414);
+}
+
+#oa {
+    background: linear-gradient( 135deg, rgba(0, 127, 83, 0.6), rgba(99, 0, 0, 0.3)),
+  url('../images/oa.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#oa.open {
+    background: url('../images/oa.jpg');
+    background-position: center;
+    background-size: cover;
+    height: calc(100vw * 249 / 375);
+}
+
+#pol {
+    background: linear-gradient( 135deg, rgba(99, 0, 0, 0.6), rgba(99, 0, 0, 0.3)),
+  url('../images/porka.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#pol.open {
+    background: url('../images/porka.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vw;
+}
+
+#elle {
+    background: linear-gradient( 135deg, rgba(0, 127, 83, 0.6), rgba(99, 0, 0, 0.3)),
+  url('../images/elle.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#elle.open {
+    background: url('../images/elle.jpg');
+    background-position: center;
+    background-size: cover;
+    height: calc(100vw * 225 / 300);
+}
+
+#x {
+    background: linear-gradient( 135deg, rgba(99, 0, 0, 0.6), rgba(99, 0, 0, 0.3)),
+  url('../images/x.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#x.open {
+    background: url('../images/x.jpg');
+    background-position: center;
+    background-size: cover;
+    height: calc(100vw * 235 / 375);
+}
+
+#pr {
+    background: linear-gradient( 135deg, rgba(0, 127, 83, 0.6), rgba(99, 0, 0, 0.3)),
+  url('../images/pr.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#pr.open {
+    background: url('../images/pr.jpg');
+    background-position: center;
+    background-size: cover;
+    height: calc(100vw * 235 / 375);
+}
+
+#nagi {
+    background: linear-gradient( 135deg, rgba(0, 127, 83, 0.6), rgba(99, 0, 0, 0.3)),
+  url('../images/nagi.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#nagi.open {
+    background: url('../images/nagi.jpg');
+    background-position: center;
+    background-size: cover;
+    height: calc(100vw * 281 / 375);
 }
 
 /* band images end */
@@ -211,6 +369,7 @@ section.wrap-up-party .title {
     text-align: center;
     color: white;
     font-size: 18px;
+    margin-bottom: 20px;
 }
 
 section.wrap-up-party .title p {
@@ -218,7 +377,7 @@ section.wrap-up-party .title p {
 }
 
 section.wrap-up-party .details {
-    margin-left: 10px;
+    margin-left: 15px;
     margin-bottom: 40px;
 }
 
@@ -226,5 +385,16 @@ section.wrap-up-party .details {
     margin-top: 20px;
 }
 .map {
-    margin-top: 60px;
+	position: relative;
+	padding: 0 0 100%;
+	height: 0;
+    overflow: hidden;
+    margin-top: 60px;    
+}
+.map iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: calc(100vw - 30px) !important;
+	height: calc(100vw - 30px) !important;
 }

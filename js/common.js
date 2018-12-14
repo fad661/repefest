@@ -4,6 +4,7 @@ window.onload = function () {
     Object.keys(bandLists).forEach(key => {
         bandLists[key].onclick = function() {
             this.classList.toggle('open');
+            this.nextElementSibling.classList.toggle('open');
         }
     });
 }
