@@ -153,13 +153,13 @@ section.first-view .details {
 
 #rotten {
     background: linear-gradient( 135deg, rgba(99, 0, 0, 0.6), rgba(99, 0, 0, 0.3)),
-  url('../images/rot.jpg');
+  url('../images/rot.JPG');
     background-position: center;
     background-size: cover;
 }
 
 #rotten.open {
-    background: url('../images/rot.jpg');
+    background: url('../images/rot.JPG');
     background-position: center;
     background-size: cover;
     height: calc(100vw * 665 / 375);
@@ -167,13 +167,13 @@ section.first-view .details {
 
 #kikawa {
     background: linear-gradient( 135deg, rgba(0, 127, 83, 0.6), rgba(99, 0, 0, 0.3)),
-  url('../images/kikawa.jpg');
+  url('../images/kikawa.JPG');
   background-position: center;
   background-size: cover;
 }
 
 #kikawa.open {
-    background: url('../images/kikawa.jpg');
+    background: url('../images/kikawa.JPG');
     background-position: center;
     background-size: cover;
     height: calc(100vw * 281 / 375);
@@ -209,13 +209,13 @@ section.first-view .details {
 
 #pol {
     background: linear-gradient( 135deg, rgba(99, 0, 0, 0.6), rgba(99, 0, 0, 0.3)),
-  url('../images/porka.jpg');
+  url('../images/porka.JPG');
   background-position: center;
   background-size: cover;
 }
 
 #pol.open {
-    background: url('../images/porka.jpg');
+    background: url('../images/porka.JPG');
     background-position: center;
     background-size: cover;
     height: 100vw;
@@ -223,13 +223,13 @@ section.first-view .details {
 
 #elle {
     background: linear-gradient( 135deg, rgba(0, 127, 83, 0.6), rgba(99, 0, 0, 0.3)),
-  url('../images/elle.jpg');
+  url('../images/elle.JPG');
   background-position: center;
   background-size: cover;
 }
 
 #elle.open {
-    background: url('../images/elle.jpg');
+    background: url('../images/elle.JPG');
     background-position: center;
     background-size: cover;
     height: calc(100vw * 225 / 300);
@@ -237,13 +237,13 @@ section.first-view .details {
 
 #x {
     background: linear-gradient( 135deg, rgba(99, 0, 0, 0.6), rgba(99, 0, 0, 0.3)),
-  url('../images/x.jpg');
+  url('../images/x.JPG');
   background-position: center;
   background-size: cover;
 }
 
 #x.open {
-    background: url('../images/x.jpg');
+    background: url('../images/x.JPG');
     background-position: center;
     background-size: cover;
     height: calc(100vw * 235 / 375);
@@ -265,13 +265,13 @@ section.first-view .details {
 
 #nagi {
     background: linear-gradient( 135deg, rgba(0, 127, 83, 0.6), rgba(99, 0, 0, 0.3)),
-  url('../images/nagi.jpg');
+  url('../images/nagi.JPG');
   background-position: center;
   background-size: cover;
 }
 
 #nagi.open {
-    background: url('../images/nagi.jpg');
+    background: url('../images/nagi.JPG');
     background-position: center;
     background-size: cover;
     height: calc(100vw * 281 / 375);
