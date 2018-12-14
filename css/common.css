@@ -1,31 +1,36 @@
 html {
     color: white;
     font-size: 12px;
-    letter-spacing: 0.7;
+    letter-spacing: 0.7px;
+    font-family: 'Renner*';
+    font-weight: 200;
 }
 
 h1 {
+    position: absolute;
+    left: 15px;
+    top: 50vh;
     font-size: 36px;
     color: #ffa3a3;
-    margin-top: 30px;
+    letter-spacing: 3px;
+    font-weight: 700;
 }
 
 section.first-view {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: linear-gradient( 135deg, rgba(246, 255, 0, 0.3), rgba(255, 0, 161, 0.3)),
+    background: linear-gradient( 135deg, rgba(4, 0, 255, 0.3), rgba(67, 67, 67, 0.3)),
   url('../images/first_view.jpg');
     background-size: cover;
     background-attachment: fixed;
     padding: 0;
 }
 
-section.first-view .inner {
-    margin: 30px 15px;
-}
-
 section.first-view .message {
+    position: absolute;
+    left: 15px;
+    top: 20vh;
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 1;
@@ -33,12 +38,38 @@ section.first-view .message {
 
 section.first-view .details {
     position: absolute;
-    bottom: 45px;
+    bottom: 20px;
     left: 15px;
 }
 
+.details p {
+    margin: 4px 0;
+}
+
+.mobile-only {
+    position: absolute;
+    bottom: 20px;
+    right: 15px;    
+}
+
+.tt {
+    font-size: 18px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+}
+
+.tt p {
+    width: 100%;
+    display:inline-block;
+    vertical-align: middle;
+    text-align: center;
+    color: white; 
+}
+
 .open-start-list {
-    padding: 40px 20px;
+    font-size: 18px;
+    padding: 20px;
 }
 
 .open-start-list p {
@@ -55,7 +86,14 @@ section.first-view .details {
 
 .band-list {
     position: relative;
-    height: 80px;
+    height: 120px;
+    position: relative;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+    transition: all 300ms 100ms ease;
+}
+
+.band-list.open {
+    height: 200px;
 }
 
 .rest-list {
@@ -73,30 +111,64 @@ section.first-view .details {
 /* band images start */
 
 #rotten {
-    background: linear-gradient( 135deg, rgba(246, 255, 0, 0.3), rgba(255, 0, 161, 0.3)),
+    background: linear-gradient( 135deg, rgba(99, 0, 0, 0.6), rgba(99, 0, 0, 0.3)),
   url('../images/first_view.jpg');
 }
 
-#rotten.close {
-    background-attachment: 
+#rotten.open {
+    background: url('../images/first_view.jpg'); 
 }
 
 /* band images end */
 
+.performance-time {
+    float: right;
+    font-size: 18px;
+    margin: 5px;
+}
+
 .band-name {
-    padding: 5px 10px;
-    width: 40%;
+    font-size: 18px;
+    padding: 10px;
+    min-width: 40%;
     position: absolute;
     bottom: -10px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+    transition: all 500ms 100ms ease;
+}
+
+.band-name.small {
+    font-size: 12px;
+}
+
+.open .band-name {
+    width: 100%;    
+    text-align: center;
+    padding: 10px 0;
 }
 
 .bg-pink .band-name {
-    background-color: rgb(255, 237, 240);
+    background-color: #ffaeae;
+    margin-left: -3px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+
 }
 
 .bg-green .band-name {
-    background-color: rgb(207, 249, 145);
+    background-color: #3cffd8;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.4);
+
     right: 0;
+}
+
+.bg-pink.open .band-name {
+    background-color: rgba(99, 0, 0, 0.6);
+    margin: 0;
+}
+
+.bg-green.open .band-name {
+    background-color: rgba(0, 127, 83, 0.6);
+    right: initial;
 }
 
 
@@ -114,9 +186,45 @@ section.first-view .details {
 }
 
 .bg-pink {
-    background-color: rgb(255, 237, 240);
+    background-color: #ffaeae;
 }
 
 .bg-green {
-    background-color: rgb(207, 249, 145);
+    background-color: #3cffd8;
+}
+
+section.wrap-up-party {
+    margin-top: 60px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/bgwrap.png');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+}
+
+section.wrap-up-party .title {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+section.wrap-up-party .title p {
+    padding: 20px;
+}
+
+section.wrap-up-party .details {
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+
+.details p.zura {
+    margin-top: 20px;
+}
+.map {
+    margin-top: 60px;
 }
